@@ -1,0 +1,29 @@
+<div class="row justify-content-center mt-5 ">
+    <div class="col-md-5" style="border:1px solid blue ; border-radius: 5px;;">
+        <form [formGroup]="updateForm" (ngSubmit)="onUpdate()"class="p-3">
+    <div class="form-group">
+        <label>Breed</label>
+        <input type="text" class="form-control" formControlName="breed" required >
+    </div>
+    <div class="form-group">
+        <label >Category</label>
+        <input type="text" class="form-control" formControlName="category" required >
+    </div>
+    <div class="form-group">
+        <label>AvgPrice</label>
+        <input type="text" class="form-control" formControlName="avgprice" required >
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" formControlName="description" required >
+    </div>
+    <div class="form-group">
+        <label for="name">image</label>
+        <input type="text" class="form-control" formControlName="image" required >
+    </div>
+    <div class="form-group ">
+     <button class="btn btn-primary mt-4" type="submit"> update</button>   
+    </div>
+        </form>
+    </div>
+</div> 
